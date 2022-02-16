@@ -1,1 +1,7 @@
-# AirBnB Clone - Web Static
+# AirBnB Clone
+
+## Web Static
+
+### Author
+
+##### Afande Ojok
