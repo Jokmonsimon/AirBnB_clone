@@ -6,10 +6,10 @@
   border-radius: 4px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
-.filters > button {
+button {
   font-size: 18px;
   background-color: #ff5a5f;
   color: #ffffff;
@@ -17,44 +17,42 @@
   width: 20%;
   border: none;
   border-radius: 4px;
-  margin-left: 25%;
+  margin-right: 30px;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
-.filters > button:hover {
-  opacity: 90%;
+button:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=100);
 }
 
 .locations {
   width: 25%;
   height: 100%;
   border-right: 1px solid #dddddd;
+  margin-right: 0;
 }
 
-.locations > h3 {
+.title {
+  margin-bottom: 0;
   font-weight: 600;
-  margin: 10px 50px;
+  margin-left: 15%;
+  text-align: left;
 }
 
-.locations > h4 {
+.subtitle {
+  margin-top: 0;
+  margin-left: 15%;
+  text-align: left;
   font-weight: 400;
   font-size: 14px;
-  margin: -5px 50px;
 }
 
 .amenities {
   width: 25%;
   height: 100%;
-}
-
-.amenities > h3 {
-  font-weight: 600;
-  margin: 10px 50px;
-}
-
-.amenities > h4 {
-  font-weight: 400;
-  font-size: 14px;
-  margin: -5px 50px;
+  margin-right: auto;
 }
 
 .popover {
@@ -62,33 +60,33 @@
   background-color: #fafafa;
   border: 1px solid #dddddd;
   border-radius: 4px;
+  list-style-type: none;
+  padding-left: 10%;
+  margin-top: -5px;
+  z-index: 1;
 }
 
-.popover > li {
-  list-style: none;
+h2 {
   font-size: 16px;
-  padding: 10px;
+}
+
+li {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.sublist {
+  list-style-type: none;
+  margin-bottom: 10%;
   cursor: pointer;
 }
 
 .locations:hover .popover {
   display: block;
-  background-color: #fafafa;
-}
-
-.popover {
-  display: none;
-  background-color: #fafafa;
-}
-
-.popover > li {
-  list-style: none;
-  font-size: 16px;
-  padding: 10px;
-  cursor: pointer;
+  position: relative;
 }
 
 .amenities:hover .popover {
   display: block;
-  background-color: #fafafa;
+  position: relative;
 }
