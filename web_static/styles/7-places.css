@@ -1,29 +1,22 @@
 .places {
   display: flex;
-  flex-direction: column;
-}
-
-.places > h1 {
-  font-size: 30px;
-}
-
-.places > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.places > div > article {
+h1 {
+  height: 30px;
+  width: 100%;
+  font-size: 30px;
+  padding-left: 3%;
+}
+
+article {
   width: 390px;
   padding: 20px;
   margin: 20px;
   border: 1px solid #ff5a5f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.places > article > h2 {
+  border-radius: 4px;
   font-size: 30px;
+  text-align: center;
 }
